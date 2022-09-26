@@ -1,0 +1,62 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/adam/miniconda3/envs/hgraph2graph
+
+  added / updated specs:
+    - rdkit
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    boost-1.74.0               |   py38h2b96118_5         369 KB  conda-forge
+    boost-cpp-1.74.0           |       h75c5d50_8        16.2 MB  conda-forge
+    cairo-1.16.0               |       h19f5f5c_2         1.1 MB
+    expat-2.4.9                |       h27087fc_0         189 KB  conda-forge
+    fontconfig-2.14.0          |       hc2a2eb6_1         318 KB  conda-forge
+    glib-2.69.1                |       h4ff587b_1         1.7 MB
+    greenlet-1.1.3             |   py38hfa26641_0          91 KB  conda-forge
+    libwebp-1.2.4              |       h522a892_0          87 KB  conda-forge
+    libxcb-1.15                |       h7f8727e_0         505 KB
+    pillow-9.2.0               |   py38hace64e9_1         666 KB
+    pycairo-1.21.0             |   py38h9c00e7a_1         117 KB  conda-forge
+    rdkit-2022.03.5            |   py38ha829ea6_0        39.6 MB  conda-forge
+    reportlab-3.5.68           |   py38hadf75a6_1         2.4 MB  conda-forge
+    sqlalchemy-1.4.41          |   py38h0a891b7_0         2.4 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        65.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  boost              conda-forge/linux-64::boost-1.74.0-py38h2b96118_5
+  boost-cpp          conda-forge/linux-64::boost-cpp-1.74.0-h75c5d50_8
+  cairo              pkgs/main/linux-64::cairo-1.16.0-h19f5f5c_2
+  expat              conda-forge/linux-64::expat-2.4.9-h27087fc_0
+  fontconfig         conda-forge/linux-64::fontconfig-2.14.0-hc2a2eb6_1
+  giflib             conda-forge/linux-64::giflib-5.2.1-h36c2ea0_2
+  glib               pkgs/main/linux-64::glib-2.69.1-h4ff587b_1
+  greenlet           conda-forge/linux-64::greenlet-1.1.3-py38hfa26641_0
+  icu                conda-forge/linux-64::icu-70.1-h27087fc_0
+  libuuid            conda-forge/linux-64::libuuid-2.32.1-h7f98852_1000
+  libwebp            conda-forge/linux-64::libwebp-1.2.4-h522a892_0
+  pcre               conda-forge/linux-64::pcre-8.45-h9c3ff4c_0
+  pixman             conda-forge/linux-64::pixman-0.40.0-h36c2ea0_0
+  pycairo            conda-forge/linux-64::pycairo-1.21.0-py38h9c00e7a_1
+  rdkit              conda-forge/linux-64::rdkit-2022.03.5-py38ha829ea6_0
+  reportlab          conda-forge/linux-64::reportlab-3.5.68-py38hadf75a6_1
+  sqlalchemy         conda-forge/linux-64::sqlalchemy-1.4.41-py38h0a891b7_0
+
+The following packages will be UPDATED:
+
+  libxcb             conda-forge::libxcb-1.13-h7f98852_1004 --> pkgs/main::libxcb-1.15-h7f8727e_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  pillow             conda-forge::pillow-9.2.0-py38ha3b2c9~ --> pkgs/main::pillow-9.2.0-py38hace64e9_1
+
+
+Proceed ([y]/n)? 
