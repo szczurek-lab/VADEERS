@@ -52,3 +52,4 @@ wheels/
 
 # Notebooks
 .ipynb_checkpoints/
+gmm-vae-compounds/test.ipynb
