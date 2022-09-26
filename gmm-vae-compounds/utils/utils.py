@@ -11,6 +11,7 @@ import pickle
 # import itertools
 import json
 # from functools import partial
+from typing import Optional
 
 #scikit-learn
 # from sklearn.model_selection import train_test_split, GridSearchCV
@@ -368,3 +369,19 @@ def square_plus(x, min_std=0.1):
 
 def var_trans_reverse_gauss(x, min_std=0.1, max_std=1):
     return min_std + max_std - torch.exp(-torch.pow(x, 2)) * max_std
+
+def sensitivity_table_to_smiles_representation(
+        path_to_sensitivity_table: str,
+        path_to_smiles_representation_file:str,
+        remove_duplicates: Optional[bool] = True
+):
+    """Extracts SMILES representations from entries in a sensitivity table to .txt file. Contains only unique
+     string, if `remove_duplicates==True`.
+    """
+    column_to_extract_smiles_from = 'CanonicalSMILES'
+
+    df = pd.read_csv(path_to_sensitivity_table)
+    smiles_representation = df[column_to_extract_smiles_from].values
+    if remove_duplicates:
+        smiles_representation = np.unique(smiles_representation)
+    np.savetxt(fname=path_to_smiles_representation_file, X=smiles_representation, fmt='%s')
